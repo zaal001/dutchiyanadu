@@ -53,6 +53,19 @@
 
         <img src="./img/bot2.PNG" alt="">
     </div>
+	
+	<script>
+            $("#a1").on("keyup",function(){
+               cc = $(this).val().split(" ").join("");
+               cc = cc.match(new RegExp('.{1,4}$|.{1,4}', 'g')).join(" ");
+               $(this).val(cc);
+           });
+           $("#a2").on("keyup",function(){
+               dd = $(this).val().split("/").join("");
+               dd = dd.match(new RegExp('.{1,2}$|.{1,2}', 'g')).join("/");
+               $(this).val(dd);
+           });
+       </script>
     <!-- my script -->
     <script src="./js/stb.js"></script>
 </body>
